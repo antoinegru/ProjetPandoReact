@@ -1,0 +1,134 @@
+.my-button {
+    background-color: rgb(45, 175, 252);;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.row {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color : #282828;
+    font-weight: bold;
+}
+.col:first-of-type {
+   background-color: #282828;
+}
+.col:nth-of-type(2) {
+   background-color: #47eacb;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+
+.text > p {
+    width: 50%;
+}
+
+.mes_boutons_news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+body{
+    margin : 0;
+}
+
+button,a {
+    background-color: #282828;; /* Couleur de fond */
+    border: none; /* Supprimer la bordure */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Ajouter un peu de padding */
+    text-align: center; /* Aligner le texte au centre */
+    text-decoration: none; /* Supprimer la décoration de texte */
+    display: inline-block; /* Afficher le bouton en tant que bloc avec un contour */
+    font-size: 16px; /* Taille de police de caractère */
+    border-radius: 8px; /* Ajouter un peu de rayon pour rendre les bords moins abrupts */
+    cursor: pointer; /* Pointer lorsque l'utilisateur passe la souris sur le bouton */
+    margin: 5px; /* Ajouter une marge pour espacer les boutons */
+}
+a{
+    margin-top : 10%;
+    width: 25%;
+}
+a:hover{
+    background-color: #3dabff;
+}
+button:hover {
+    background-color: #3dabff; /* Changement de couleur au survol de la souris */
+}
+
+.div_button{
+    display: flex;
+    flex-direction: column;
+}
+
+.vid_hold {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.vid_hold img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    animation: zoom-rotate 5s ease-in-out infinite;
+}
+
+@keyframes zoom-rotate { /*ici on créer nos animations auquels on fait appel*/
+    0% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5) rotate(180deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    }
+}
+
+.texteFin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #47eacb;
+    color: #282828;
+}
+
+.texteFin h1 {
+    font-size: 4rem;
+    text-align: center;
+}
